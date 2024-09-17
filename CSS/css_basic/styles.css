@@ -1,4 +1,4 @@
-/* body, main{
+body, main{
     display: flex;
 }
 
@@ -20,4 +20,4 @@ article{
 
 aside{
     flex: 1;
-} */
+}
