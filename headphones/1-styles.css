@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .bg-img {
   background-image: url("headphones_hero_1.jpg");
   background-repeat: no-repeat;
@@ -8,6 +13,10 @@
 }
 
 /* || NAVBAR */
+
+.section1 {
+  width: 100%;
+}
 
 .navbar {
   display: flex;
@@ -175,11 +184,120 @@ button:active {
     align-items: center;
     margin-top: 50px;
   }
+
+  .__p2 p {
+    width: 335px;
+    height: 182px;
+  }
 }
 
 /* || section2 */
 
-h1 {
-  content: "\e910";
-  font-family: "MyIconFont";
+.section2 {
+  height: 470px;
+  width: 100%;
+}
+
+.section2-container {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.section2-container h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.centerp {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.centerp p {
+  width: 63%; /* Approximately converts 637px to percentage */
+  height: 184px; /* Retain the original height */
+}
+
+.lorem {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 98%; /* Use a percentage width for responsiveness */
+  max-width: 1002px; /* Keep the max width to prevent overflow */
+  margin: 0 auto;
+  height: 193px; /* Retain the original height */
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+  text-align: center;
+  width: 20%; /* Convert 207px width to approximately 20% */
+  height: 180px; /* Retain the original height */
+  box-sizing: border-box;
+}
+
+.col1 img,
+.col2 img,
+.col3 img,
+.col4 img {
+  width: 45%; /* Convert 94.2px to percentage */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.col1 h3,
+.col2 h3,
+.col3 h3,
+.col4 h3 {
+  font-weight: 550;
+  font-size: 18px; /* Retain original font size */
+  margin-top: 15px;
+}
+
+.col1 p,
+.col2 p,
+.col3 p,
+.col4 p {
+  color: #071629;
+  font-size: 14px; /* Retain original font size */
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .col1,
+  .col2,
+  .col3,
+  .col4 {
+    width: 45%; /* Two columns per row on tablets */
+    margin-top: 15%;
+  }
+
+  .lorem {
+    width: 59%;
+    height: 469px;
+    gap: 30px;
+  }
+
+  .section2 {
+    height: 850px;
+  }
+}
+
+@media (max-width: 376px) {
+  .section2 {
+    height: 1400px;
+  }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4 {
+    margin-top: 15%;
+  }
+
+  .lorem {
+    margin-top: 30%;
+  }
 }
