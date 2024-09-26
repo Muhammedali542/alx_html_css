@@ -1,0 +1,185 @@
+.bg-img {
+  background-image: url("headphones_hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 800px;
+  background-position: center;
+}
+
+/* || NAVBAR */
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 32px;
+  padding: 30px;
+}
+
+input {
+  display: none;
+}
+
+.navbar img {
+  height: 32px;
+  size: 161px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff6565;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+}
+
+#toggler {
+  display: none;
+}
+
+.hammenu {
+  display: none;
+}
+
+/* || Section1  */
+
+.__h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.__p1 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+button {
+  background-color: #ff6565;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  margin: 40 auto;
+  padding: 10px 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Source Sans Pro", sans-serif;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translatey(2px);
+}
+
+.__p2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.__p2 p {
+  color: white;
+  width: 637px;
+  height: 104;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 376px) {
+  /* Show the hamburger menu on mobile */
+
+  .bg-img {
+    background-image: url("headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 869px;
+    background-position: center;
+    width: 375px;
+    width: 100%;
+  }
+
+  .hammenu {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+
+  /* Hide the menu by default */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  label {
+    display: flex;
+    position: absolute;
+    left: 20px;
+  }
+
+  /* Show the menu when the checkbox is checked */
+  .menu-checkbox:checked + .hammenu + .menu {
+    display: block;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .list li {
+    margin: 5px 0;
+  }
+
+  .__p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+/* || section2 */
+
+h1 {
+  content: "\e910";
+  font-family: "MyIconFont";
+}
