@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-blend-mode: overlay;
   height: 800px;
-  background-position: center;
+  background-position: center center;
 }
 
 /* || NAVBAR */
@@ -127,7 +127,7 @@ button:active {
     background-size: cover;
     background-blend-mode: overlay;
     height: 869px;
-    background-position: center;
+    background-position: 35% 65%;
     width: 375px;
     width: 100%;
   }
@@ -216,7 +216,7 @@ button:active {
 
 .centerp p {
   width: 63%; /* Approximately converts 637px to percentage */
-  height: 184px; /* Retain the original height */
+  height: 160px; /* Retain the original height */
 }
 
 .lorem {
@@ -299,5 +299,251 @@ button:active {
 
   .lorem {
     margin-top: 30%;
+  }
+}
+
+/* || section3 */
+
+.bg-img2 {
+  background-image: url(headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.section3-container h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 180px;
+}
+
+.centerp2 {
+  display: flex;
+  justify-content: center;
+}
+.centerp2 p {
+  width: 637px;
+  height: 104px;
+  font-size: 16px;
+  color: white;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 70px;
+  position: relative;
+}
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrapper {
+  position: relative; /* Set relative position for the container */
+  display: inline-block;
+  width: auto; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%; /* Ensure the image takes up the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.img-wrapper p,
+.img-wrapper i {
+  position: absolute; /* Position elements absolutely within the .img-wrapper */
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* Position <p> element */
+.img-wrapper p {
+  top: 85%; /* Position at 85% from the top */
+  left: 50%; /* Center horizontally */
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Position <i> element */
+.img-wrapper i {
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  font-size: 46px;
+  font-weight: bold;
+}
+
+/* Base Styles */
+.centerp2 p {
+  width: 637px;
+  height: 104px;
+  font-size: 16px;
+  color: white;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 70px;
+  position: relative;
+}
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 190px;
+  height: 190px;
+}
+
+.img-wrapper p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.centerp3 {
+  display: flex;
+}
+
+.centerp3 p {
+  width: 111px;
+  height: 26px;
+  flex-wrap: nowrap;
+}
+
+i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjusting elements for tablets and small screens */
+  .centerp2 p {
+    width: 90%; /* Reduce width to fit within smaller screens */
+    font-size: 14px; /* Adjust font size */
+    padding-top: 60px;
+  }
+
+  .section3-container h1 {
+    padding-top: 141px;
+  }
+  .discount {
+    flex-wrap: wrap; /* Allow elements to wrap */
+    column-gap: 1px;
+  }
+
+  .img-wrapper {
+    width: 45%; /* Two columns per row */
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .centerp3 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .centerp3 p {
+    width: 90%; /* Reduce width */
+    height: auto; /* Auto height */
+    margin: 5px 0; /* Add some margin */
+  }
+
+  .bg-img2 {
+    background-image: url(headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    height: 876px;
+    width: 100%;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 376px) {
+  .bg-img2 {
+    background-image: url(headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: 45% 55%;
+    height: 1491px;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  /* Styles for mobile screens */
+  .centerp2 p {
+    width: 95%; /* Almost full width for mobile */
+    font-size: 12px; /* Smaller font size */
+    padding-top: 15px;
+  }
+
+  .discount {
+    flex-wrap: wrap; /* Wrap items */
+    gap: 65px; /* Smaller gap */
+  }
+
+  .img-wrapper {
+    width: 100%; /* Full width for small screens */
+    margin-top: 10%; /* Adjust top margin */
+  }
+
+  .img-wrapper img {
+    width: 100%; /* Make images responsive */
+  }
+
+  .img-wrapper p {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .centerp3 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .centerp3 p {
+    width: 80px; /* Further reduce width */
+    height: auto; /* Auto height */
+    margin: 10px 0; /* Margin for spacing */
+  }
+
+  .section2 {
+    height: 1400px; /* Increase height */
   }
 }
