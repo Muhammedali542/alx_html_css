@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="2-reset.css" />
-    <link rel="stylesheet" href="2-styles.css" />
+    <link rel="stylesheet" href="7-reset.css" />
+    <link rel="stylesheet" href="7-styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Source Sans Pro"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
   <body>
@@ -30,9 +34,9 @@
           </label>
           <div class="menu">
             <ul class="list">
-              <li><a href="#">What we do</a></li>
-              <li><a href="#">Our result</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#whatWeDo">What we do</a></li>
+              <li><a href="#ourResult">Our result</a></li>
+              <li><a href="#contact">Contact us</a></li>
             </ul>
           </div>
         </nav>
@@ -61,7 +65,7 @@
 
     <section class="section2">
       <div class="section2-container">
-        <h2>What we do...</h2>
+        <h2 id="whatWeDo">What we do...</h2>
         <div class="centerp">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
@@ -102,7 +106,7 @@
     <section class="section3">
       <div class="bg-img2">
         <div class="section3-container">
-          <h1>Our results speak for themselves</h1>
+          <h1 id="ourResult">Our results speak for themselves</h1>
           <div class="centerp2">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -120,7 +124,7 @@
               style="width: 190px"
               style="height: 190px"
             />
-            <i>+2%</i>
+            <span>+2%</span>
             <div class="centerp3"><p>Lorem, ipsum dolor.</p></div>
           </div>
           <div class="img-wrapper">
@@ -130,7 +134,7 @@
               style="width: 190px"
               style="height: 190px"
             />
-            <i>+2%</i>
+            <span>+2%</span>
             <div class="centerp3"><p>Lorem, ipsum dolor.</p></div>
           </div>
           <div class="img-wrapper">
@@ -140,7 +144,7 @@
               style="width: 190px"
               style="height: 190px"
             />
-            <i>+2%</i>
+            <span>+2%</span>
             <div class="centerp3"><p>Lorem, ipsum dolor.</p></div>
           </div>
           <div class="img-wrapper">
@@ -150,11 +154,51 @@
               style="width: 190px"
               style="height: 190px"
             />
-            <i>+2%</i>
+            <span>+2%</span>
             <div class="centerp3"><p>Lorem, ipsum dolor.</p></div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="contact-section">
+      <h2 id="contact">Contact us</h2>
+      <form action="#" method="post">
+        <div class="formcenter">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Your message</label>
+            <input type="text" id="message" name="message" required />
+          </div>
+        </div>
+
+        <div class="btn2">
+          <button type="submit">Call to Action</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <section>
+        <div class="footer-logo">
+          <div class="img-size">
+            <img src="logo_headphones.png" alt="logo" />
+          </div>
+          <div class="icons">
+            <i class="social-icon fa-brands fa-facebook"></i>
+            <i class="social-icon fa-brands fa-twitter"></i>
+            <i class="social-icon fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <p>©headphones 2020</p>
+      </section>
+    </footer>
   </body>
 </html>

@@ -18,6 +18,9 @@ body {
   width: 100%;
 }
 
+svg {
+  padding-bottom: 577px;
+}
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +30,7 @@ body {
   padding: 30px;
 }
 
-input {
+.navbar input {
   display: none;
 }
 
@@ -136,7 +139,7 @@ button:active {
     display: block;
   }
 
-  input {
+  .navbar input {
     display: none;
   }
 
@@ -156,7 +159,139 @@ button:active {
     justify-content: center;
   }
 
-  label {
+  .navbar label {
+    display: flex;
+    position: absolute;
+    left: 20px;
+  }
+
+  /* Show the menu when the checkbox is checked */
+  .menu-checkbox:checked + .hammenu + .menu {
+    display: block;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .list li {
+    margin: 5px 0;
+  }
+
+  .__p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .__p2 p {
+    width: 335px;
+    height: 182px;
+  }
+}
+
+/* || Section1  */
+
+.__h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.__p1 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+button {
+  background-color: #ff6565;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  margin: 40 auto;
+  padding: 10px 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Source Sans Pro", sans-serif;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translatey(2px);
+}
+
+.__p2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.__p2 p {
+  color: white;
+  width: 637px;
+  height: 104;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 376px) {
+  /* Show the hamburger menu on mobile */
+
+  .bg-img {
+    background-image: url("headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 869px;
+    background-position: 35% 65%;
+    width: 375px;
+    width: 100%;
+  }
+
+  .hammenu {
+    display: block;
+  }
+
+  #menu-toggler {
+    display: none;
+  }
+
+  /* Hide the menu by default */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  /* ||| MISTAKE HERE */
+  .navbar label {
     display: flex;
     position: absolute;
     left: 20px;
@@ -194,13 +329,14 @@ button:active {
 /* || section2 */
 
 .section2 {
-  height: 470px;
+  height: 650px;
   width: 100%;
+  gap: 20px;
 }
 
 .section2-container {
   text-align: center;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 .section2-container h2 {
@@ -265,7 +401,7 @@ button:active {
   margin-top: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .col1,
   .col2,
   .col3,
@@ -347,24 +483,19 @@ button:active {
 .img-wrapper {
   position: relative;
   display: inline-block;
-}
-
-.img-wrapper {
-  position: relative; /* Set relative position for the container */
-  display: inline-block;
-  width: auto; /* Adjust as needed */
-  height: auto; /* Adjust as needed */
+  width: auto;
+  height: auto;
 }
 
 .img-wrapper img {
   display: block;
-  width: 100%; /* Ensure the image takes up the container width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 .img-wrapper p,
-.img-wrapper i {
-  position: absolute; /* Position elements absolutely within the .img-wrapper */
+.img-wrapper span {
+  position: absolute;
   text-align: center;
   color: white;
   transform: translate(-50%, -50%);
@@ -379,7 +510,7 @@ button:active {
 }
 
 /* Position <i> element */
-.img-wrapper i {
+.img-wrapper span {
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
   font-size: 46px;
@@ -396,29 +527,10 @@ button:active {
   text-align: center;
 }
 
-.discount {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 70px;
-  position: relative;
-}
-
-.img-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.img-wrapper img {
-  display: block;
-  width: 190px;
-  height: 190px;
-}
-
-.img-wrapper p {
+.centerp3 p {
   position: absolute;
   top: 85%;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
@@ -436,7 +548,7 @@ button:active {
   flex-wrap: nowrap;
 }
 
-i {
+span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -449,10 +561,28 @@ i {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  /* Adjusting elements for tablets and small screens */
+  .img-wrapper p,
+  .img-wrapper span {
+    position: absolute;
+    text-align: center;
+    color: white;
+    transform: translate(-60%, -50%);
+  }
+
+  .centerp3 p {
+    position: absolute;
+    top: 85%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
   .centerp2 p {
-    width: 90%; /* Reduce width to fit within smaller screens */
-    font-size: 14px; /* Adjust font size */
+    width: 90%;
+    font-size: 14px;
     padding-top: 60px;
   }
 
@@ -460,12 +590,12 @@ i {
     padding-top: 141px;
   }
   .discount {
-    flex-wrap: wrap; /* Allow elements to wrap */
+    flex-wrap: wrap;
     column-gap: 1px;
   }
 
   .img-wrapper {
-    width: 45%; /* Two columns per row */
+    width: 45%;
     margin-top: 15%;
     display: flex;
     justify-content: center;
@@ -475,10 +605,12 @@ i {
   .centerp3 {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
+    justify-content: center;
+    padding-right: 10px;
   }
 
   .centerp3 p {
-    width: 90%; /* Reduce width */
+    width: 100%; /* Reduce width */
     height: auto; /* Auto height */
     margin: 5px 0; /* Add some margin */
   }
@@ -505,6 +637,25 @@ i {
     height: 1491px;
     width: 100%;
     padding-top: 100px;
+  }
+
+  .img-wrapper p,
+  .img-wrapper span {
+    position: absolute;
+    text-align: center;
+    color: white;
+    transform: translate(-60%, -50%);
+  }
+
+  .centerp3 p {
+    position: absolute;
+    top: 85%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   /* Styles for mobile screens */
@@ -545,5 +696,171 @@ i {
 
   .section2 {
     height: 1400px; /* Increase height */
+  }
+}
+
+/* form section */
+
+.contact-section {
+  height: 650px;
+  width: 100%;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 130px;
+}
+
+.formcenter {
+  display: grid;
+  grid-template-columns: 25%; /* Allow rows to adjust based on content */
+  justify-content: space-around;
+  width: 100%;
+  row-gap: 40px;
+  padding-top: 70px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  width: 45%;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: solid 1px;
+  background-color: #fff;
+}
+
+.btn2 {
+  display: grid;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+@media (max-width: 376px) {
+  .formcenter {
+    display: grid;
+    grid-template-columns: 80%; /* Allow rows to adjust based on content */
+    justify-content: space-around;
+    width: 100%;
+    row-gap: 40px;
+    padding-top: 70px;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    display: grid; /* Use flexbox to align label and input */
+    width: 100%; /* Ensures the row takes full width of the formcenter */
+    align-items: center; /* Center align items vertically */
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%; /* Full width for smaller screens */
+    border-bottom: solid 1px;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    position: none;
+  }
+
+  .contact-section {
+    padding-top: 60px;
+  }
+
+  label {
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+/* footer */
+
+.footer {
+  background-color: #071629;
+  margin-top: 0px;
+  height: 249px;
+  width: 100%;
+}
+
+.footer div {
+  display: flex;
+  gap: 15px;
+
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white; /* Make icons white */
+  cursor: pointer;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 75px;
+}
+
+.img-size img {
+  height: 32px;
+  size: 161px;
+}
+
+@media screen and (max-width: 376px) {
+  footer p {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 20px;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+
+  .footer div {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer div:nth-child(2) {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .icons {
+    padding-top: 20px;
   }
 }
